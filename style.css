@@ -1,0 +1,10 @@
+#areaExibirResultado{
+    width: 400px;
+    height: 900px;
+    margin: 10px auto;
+    padding: 100px;
+    border: 1px solid rgb(153, 109, 109);
+    border-radius: 32px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}

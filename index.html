@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de Texto</title>
+ 
+       
+
+</head>
+<body>
+    <header>
+        <img src="imgs/Frame 6.png" alt="Logo da Alura">
+    </header>
+    <main>
+        <input type="text" id="mensagemRecebida" placeholder="Digite seu texto.">
+        <img src="imgs/Frame 1.png" alt="Alerta dos requisitos">
+        <button onclick=" ocultarImagemTexto(); criptTexto()" >Criptografar</button>
+        <button onclick="ocultarImagemTexto(); descriptTexto()">Descriptografar</button>
+        <button onclick="ctrlC();exibirImagemTexto();">Copiar</button>
+        <div id="areaExibirResultado">
+            <p id="resultadoCripDescrip"></p>
+             <!-- Conteúdo dinâmico será exibido aqui -->
+             <div id="imagemTextoInicial">
+                <img src="imgs/img menu 1x.png" alt="">
+                <p><b>Nenhuma mensagem encontrada</b></p>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            
+       </div>
+    
+    </main>
+    <footer>
+        <h3>Contatos:</h3>
+        <p>Gilberto Monteiro</p>
+        <p>gylberto120.gm@gmail.com</p>
+        <p>(91) 9 9248-0089</p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
