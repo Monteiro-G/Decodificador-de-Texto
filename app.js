@@ -1,12 +1,15 @@
 function ocultarImagemTexto(){
-  document.getElementById('imagemTextoInicial').style.display ='none';
+  document.querySelector('.areaExibirResultado').style.backgroundImage ='none';
+
 }
 
 function exibirImagemTexto(){
-    document.getElementById('imagemTextoInicial').style.display ='';
-  }
+  const areaExibirResultado = document.querySelector('.areaExibirResultado').style.backgroundImage = 'url(/imgs/menu_1x.png)';
+
+}
+
 function criptTexto() {
-    let mensagemDigitada = document.getElementById('mensagemRecebida').value;
+    let mensagemDigitada = document.querySelector('.mensagemRecebida').value;
     let textoCriptografado = '';
 
     textoCriptografado = mensagemDigitada.replace(/e/g,'enter')
@@ -14,24 +17,27 @@ function criptTexto() {
                                          .replace(/a/g,'ai')
                                          .replace(/o/g,'ober')
                                          .replace(/u/g,'ufat');
-  return document.getElementById('resultadoCripDescrip').innerText = textoCriptografado;
-} 
+  return document.querySelector('.areaExibirResultado').innerText = textoCriptografado;
+}
 criptTexto();
 
 function descriptTexto() {
-    let mensagemCript = document.getElementById('mensagemRecebida').value;
+    let mensagemCript = document.querySelector('.mensagemRecebida').value;
     let textDescript = '';
-
     textDescript = mensagemCript.replace(/enter/g, 'e')
                                 .replace(/imes/g, 'i')
                                 .replace(/ai/g, 'a')
                                 .replace(/ober/g, 'o')
                                 .replace(/ufat/g, 'u');
-  return document.getElementById('resultadoCripDescrip').innerText = textDescript;
+  return document.querySelector('.areaExibirResultado').innerText = textDescript;
 }
-descriptTexto();
+let resultado = descriptTexto();
 function ctrlC() {
-    let textoCopiado = document.getElementById('resultadoCripDescrip').innerText;
-    navigator.clipboard.writeText(textoCopiado);
+  let textoCopiado = document.querySelector('.areaExibirResultado').value;
+    navigator.clipboard.writeText(textoCopiado).innerText;
     alert('Texto copiado com sucesso!');
+}
+function limpar() {
+  let limpatexto = document.querySelector('.mensagemRecebida');
+  limpatexto.value ='';
 }

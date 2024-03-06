@@ -21,14 +21,14 @@
            <img src="imgs/Frame 1.png" alt="Alerta dos requisitos">
         </div>
         <div class="botoes">  
-            <button class="btnEncriptar" onclick=" ocultarImagemTexto(); criptTexto()" >Criptografar</button>
-            <button class="btnDesencriptar" onclick="ocultarImagemTexto(); descriptTexto()">Descriptografar</button> 
+            <button class="btnEncriptar" onclick=" ocultarImagemTexto(); criptTexto();limpar()" >Criptografar</button>
+            <button class="btnDesencriptar" onclick="ocultarImagemTexto(); descriptTexto();limpar()">Descriptografar</button> 
         </div>
         </section>
 
         <section>
-            <textarea class="areaExibirResultado" id="" cols="30" rows="10"></textarea>
-            <button class="btnCopiar" onclick="ctrlC();exibirImagemTexto();">Copiar</button>
+            <textarea class="areaExibirResultado" id="resultado" cols="30" rows="10"></textarea>
+            <button class="btnCopiar" onclick="ctrlC()">Copiar</button>
             <div class="textoInicial">
                 <p class="textoInicial1">Nenhuma mensagem encontrada</p>
                 <p class="textoInicial2">Digite um texto que você deseja criptografar ou descriptografar.</p>
