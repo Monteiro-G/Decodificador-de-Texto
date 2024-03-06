@@ -29,7 +29,6 @@ main{
     height: 500px;
 }::placeholder {color: #0A3871;}
 .mensagemRecebida:focus{
-   
     outline: none;
     font-size: 32px;
 }
@@ -60,8 +59,9 @@ main{
 }
 
 .areaExibirResultado{
+    text-align: justify;
     background: white;
-    background-image: url(/imgs/img\ menu\ 1x.png);
+    background-image: url(/imgs/menu_1x.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 316px 284px;
@@ -70,7 +70,7 @@ main{
     color: #0A3871;
     margin-left: 90px;
     margin-top: 5px;
-    padding-left: 20px;
+    padding: 50px;
     position: absolute;
     box-shadow: 5px 15px 20px rgba(97, 96, 96, 0.3);
     width: 400px;
